@@ -21,7 +21,7 @@ productoId: string;
                   // console.log(parametros['id']);
                   this.productoService.getProducto(parametros['id'])
                   .subscribe( (producto: ProductoDescripcion) => {
-                      console.log(producto);
+                      // console.log(producto);
                       this.productoId = parametros['id'];
                       this.producto = producto;
                   });

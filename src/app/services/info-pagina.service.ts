@@ -12,7 +12,7 @@ export class InfoPaginaService {
   miembros: any[] = [];
 
   constructor( private http: HttpClient) { 
-  console.log("Servicio de Info Página listo");
+  // console.log("Servicio de Info Página listo");
 
   this.cargarInfo();
   this.cargarEquipo();
@@ -32,7 +32,7 @@ export class InfoPaginaService {
     this.http.get('https://angular-html-31822.firebaseio.com/equipo.json')
       .subscribe( (resp: any[]) => {
         this.miembros = resp;
-        console.log(this.miembros);
+        // console.log(this.miembros);
       });
   }
 
